@@ -26,7 +26,7 @@ jobs:
         set QTDIR=%GITHUB_WORKSPACE%\Qt\5.12.12\msvc2017
         set PATH=%PATH%;%GITHUB_WORKSPACE%\Qt\5.12.12\msvc2017\bin
         cmd.exe /c build-libffi.bat
-        cmd.exe /c build-ultimate.bat
+        cmd.exe /c build-ultimate-x86.bat
         
     - name: build x64
       shell: cmd
