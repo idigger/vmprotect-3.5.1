@@ -2,7 +2,7 @@ echo build-ultimate.bat: generating VMProtect Ultimate x64
 
 SET ROOT_DIR=%~dp0
 
-if exist "%ROOT_DIR%\bin" rmdir /q /s "%ROOT_DIR%\bin"
+rem if exist "%ROOT_DIR%\bin" rmdir /q /s "%ROOT_DIR%\bin"
 if exist "%ROOT_DIR%\tmp" rmdir /q /s "%ROOT_DIR%\tmp"
 
 msbuild vmprotect.sln /p:Configuration=Ultimate /p:Platform=Win32 /t:VMProtectSDK
